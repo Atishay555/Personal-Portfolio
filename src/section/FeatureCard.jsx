@@ -11,7 +11,7 @@ const FeatureCard = () => {
                   <img src={imgPath} alt="img" />
                 </div>
               <h3 className='text-white text-2xl font-semibold'>{title}</h3>
-              <p className='text-white-50 text-lg'> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className='text-white-50 text-lg'> {desc}</p>
             </div>
           ))}
         </div>

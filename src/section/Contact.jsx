@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import TitleHeader from '../component/TitleHeader'
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,21 +20,36 @@ const Contact = () => {
     }))
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    setTimeout(() => {
-      console.log('Form submitted:', formData)
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      })
-      setIsSubmitting(false)
-      alert('Thank you for your message! I will get back to you soon.')
-    }, 1000)
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    await emailjs.send(
+      "service_25brl7c",
+      "template_s110z2s",
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      },
+      "2yuIlsO42thDlX_3t"
+    );
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+    alert("Thank you for your message! I will get back to you soon.");
+  } catch (error) {
+    console.error(error);
+    alert("Failed to send message. Please try again.");
+  } finally {
+    setIsSubmitting(false);
   }
+};
 
   return (
     <section id='contact' className='flex-center section-padding mt-30'>
@@ -108,7 +125,7 @@ const Contact = () => {
               >
                 {isSubmitting ? (
                   <>
-                    <span className='animate-spin'>⏳</span>
+                    
                     Sending...
                   </>
                 ) : (

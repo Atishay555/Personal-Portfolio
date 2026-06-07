@@ -56,11 +56,11 @@ const ShowCaseSection = () => {
           {/* left Section/ Main Project */}
           <div className='first-project-wrapper' ref={Project1}>
             <div className='image-wrapper'>
-              <img src="/images/project1.png" alt="ArenaX" />
+              <img src="/images/ArenaX.jpeg" alt="ArenaX" />
             </div>
             <div className='text-content'>
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <p className='text-white-50 md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, incidunt.</p>
+              <h2>ArenaX – Sports Management & Booking Platform</h2>
+              <p className='text-white-50 md:text-xl'>ArenaX is a comprehensive sports ecosystem designed to simplify and digitize sports management, tournament organization, turf booking, and athlete development.</p>
             </div>
           </div>
 
@@ -69,15 +69,15 @@ const ShowCaseSection = () => {
           <div className='project-list-wrapper overflow-hidden'>
             <div className='project' ref={Project2}>
               <div className='image-wrapper bg-[#ffefdb]'>
-                <img src="/images/project2.png" alt="Drive" />
+                <img src="/images/gemini-clone.jpeg" alt="Drive" />
               </div>
-              <h2>Google Drive clone</h2>
+              <h2>Jarvis(Ai Assistant platform)</h2>
             </div>
             <div className='project' ref={Project3}>
               <div className='image-wrapper bg-[#f5f4f4]'>
-                <img src="/images/project3.png" alt="Ai Assistant" />
+                <img src="/images/project2.png" alt="Ai Assistant" />
               </div>
-              <h2>Jarvis(Ai Assistant platform)</h2>
+              <h2>Library Managment System</h2>
             </div>
           </div>
 
