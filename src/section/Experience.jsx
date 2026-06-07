@@ -64,7 +64,7 @@ const Experience = () => {
                       key={index}
                       className='flex gap-4 items-start text-white-50'
                     >
-                      <span className='text-white-50 font-bold text-lg mt-0.5 flex-shrink-0'>
+                      <span className='text-white-50 font-bold text-lg mt-0.5 shrink-0'>
                         •
                       </span>
                       <span className='text-base leading-relaxed'>

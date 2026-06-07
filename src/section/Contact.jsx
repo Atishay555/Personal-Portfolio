@@ -139,7 +139,7 @@ const Contact = () => {
           </div>
 
           {/* RIGHT SECTION - 3D MODEL */}
-          <div className='flex flex-col justify-center items-center h-96 md:h-[500px] relative'>
+          <div className='flex flex-col justify-center items-center h-96 md:h-125 relative'>
             <div className='w-full h-full rounded-xl overflow-hidden border border-black-50 bg-[#fde300]'>
               <img src="/images/Atishay.png" alt="Atishay "  className="relative  w-full h-full object-cover" />
             </div>
