@@ -77,7 +77,7 @@ const ShowCaseSection = () => {
               <div className='image-wrapper bg-[#f5f4f4]'>
                 <img src="/images/project2.png" alt="Ai Assistant" />
               </div>
-              <h2>Library Managment System</h2>
+              <h2>BookWise</h2>
             </div>
           </div>
 
