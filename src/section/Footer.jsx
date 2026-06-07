@@ -13,7 +13,7 @@ const Footer = () => {
     },
     {
       name: 'LinkedIn',
-      icon: '/images/logos/twitter.png',
+      icon: '/images/logos/linkedin.png',
       url: 'https://www.linkedin.com/in/atishay-jain-77461930a/',
       ariaLabel: 'Visit LinkedIn',
     },
