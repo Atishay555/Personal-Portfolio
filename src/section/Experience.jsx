@@ -7,39 +7,24 @@ const Experience = () => {
       id: 1,
       position: 'Backend Intern',
       company: 'Sync and Explore',
-      duration: 'January 2023 - June 2023',
+      duration: 'December 2025 - January 2026',
       description: 'Worked as a Backend Intern where I contributed to the development and maintenance of server-side applications.',
       responsibilities: [
-        'Developed RESTful APIs using Node.js and Express for multiple features',
-        'Implemented database schemas and optimized queries for better performance',
+        'Implemented the Google Calendar Sync Feature, reducing manual scheduling effort by approximately 60%.',
+        'Designed schemas and validated data using MongoDB',
         'Collaborated with frontend developers to integrate backend services seamlessly',
-        'Wrote unit tests and conducted code reviews to ensure code quality',
+        'Developed JWT authentication and secure cookie-based login solutions.',
         'Debugged and resolved production issues affecting user experience',
-        'Participated in agile sprint planning and daily standup meetings'
+        'Tested more than 20 APIs with Postman.'
       ]
     },
-    {
-      id: 2,
-      position: 'Junior Developer',
-      company: 'Tech Solutions Ltd',
-      duration: 'July 2023 - Present',
-      description: 'Contributing to full-stack development projects with focus on backend optimization and scalability.',
-      responsibilities: [
-        'Built microservices architecture for large-scale applications',
-        'Implemented authentication and authorization using JWT tokens',
-        'Optimized database queries reducing response time by 40%',
-        'Maintained and upgraded legacy systems to modern technology stack',
-        'Mentored junior developers and conducted knowledge sharing sessions',
-        'Deployed applications on AWS and Docker containers'
-      ]
-    }
   ]
 
   return (
-    <section id='experience' className='flex-center section-padding'>
+    <section id='experience' className='flex-center section-padding mt-18 '>
       <div className='w-full h-full md:px-10 px-5 max-w-6xl'>
         <TitleHeader 
-          title='Experience'
+          title='EXPERIENCE'
         />
 
         <div className='mt-16 space-y-12'>

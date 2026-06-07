@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import TitleHeader from '../component/TitleHeader'
-import ContactExperience from '../component/models/contact_models/ContactExperience'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -36,10 +35,10 @@ const Contact = () => {
   }
 
   return (
-    <section id='contact' className='flex-center section-padding'>
+    <section id='contact' className='flex-center section-padding mt-30'>
       <div className='w-full h-full md:px-10 px-5'>
         <TitleHeader 
-          title='Get In Touch With Me'
+          title='CONTACT ME'
 
         />
 
@@ -124,8 +123,8 @@ const Contact = () => {
 
           {/* RIGHT SECTION - 3D MODEL */}
           <div className='flex flex-col justify-center items-center h-96 md:h-[500px] relative'>
-            <div className='w-full h-full rounded-xl overflow-hidden border border-black-50 bg-black-100'>
-              <ContactExperience />
+            <div className='w-full h-full rounded-xl overflow-hidden border border-black-50 bg-[#fde300]'>
+              <img src="/images/Atishay.png" alt="Atishay "  className="relative  w-full h-full object-cover" />
             </div>
           </div>
         </div>

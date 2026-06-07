@@ -4,7 +4,6 @@ import {OrbitControls} from '@react-three/drei'
 import {useMediaQuery} from 'react-responsive'
 import { Room } from './Room'
 import HeroLights from './HeroLights'
-import Particles from './Particle';
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery({query:'(max-width:1024px)'}) ; 
@@ -27,7 +26,6 @@ const HeroExperience = () => {
       rotation ={[0,-Math.PI/4,0]}>
         <Room/>
       </group>
-      <Particles count={100}/>
       
     </Canvas>
   )
